@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8PQ-XN-zxL">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RealTimeCarSharing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="xI8-a2-CrG">
+                                <rect key="frame" x="0.0" y="71" width="375" height="35"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="from" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hY8-WJ-6bC">
+                                        <rect key="frame" x="0.0" y="0.0" width="36" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A7a-em-fAj" customClass="roundTxtFied" customModule="RealTimeCarSharing" customModuleProvider="target">
+                                        <rect key="frame" x="53" y="0.0" width="140" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="140" id="4xM-ld-7oQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.38478904749999998" green="0.68919866060000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfm-MH-Mwp">
+                                        <rect key="frame" x="209.5" y="0.0" width="18.5" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="vMF-q3-ev4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="to Destination" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7c6-YC-Ba2" customClass="roundTxtFied" customModule="RealTimeCarSharing" customModuleProvider="target">
+                                        <rect key="frame" x="245" y="0.0" width="130" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="130" id="ZaM-IK-JmE"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.38478904749999998" green="0.68919866060000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="7c6-YC-Ba2" secondAttribute="trailing" id="3P2-kB-spu"/>
+                                    <constraint firstAttribute="height" constant="35" id="AIS-LG-xdb"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xzc-gS-k5y" customClass="circleButton" customModule="RealTimeCarSharing" customModuleProvider="target">
+                                <rect key="frame" x="162.5" y="116" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8Yd-g1-YgI"/>
+                                    <constraint firstAttribute="width" constant="50" id="9Q3-2S-zig"/>
+                                </constraints>
+                                <state key="normal" title="Get">
+                                    <color key="titleColor" red="0.38478904749999998" green="0.68919866060000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="0.62339189240000004" blue="0.97196798120000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="GetBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Zp-Lv-NXo"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dpu-7r-GaY">
+                                <rect key="frame" x="0.0" y="173" width="375" height="494"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tripcell" rowHeight="124" id="6KT-Fg-tIB" customClass="CustomTripeCell" customModule="RealTimeCarSharing" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="124"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6KT-Fg-tIB" id="KJ7-Pf-FM3">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="123.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="X7k-9t-Dw2">
+                                                    <rect key="frame" x="0.0" y="7" width="355" height="60"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="from to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2i-IH-1nT">
+                                                            <rect key="frame" x="0.0" y="0.0" width="219" height="60"/>
+                                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6P-Oo-1aw">
+                                                            <rect key="frame" x="219" y="0.0" width="136" height="60"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="60" id="tQX-rV-ge5"/>
+                                                    </constraints>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uAZ-RX-JbE">
+                                                    <rect key="frame" x="5" y="72" width="365" height="46.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="phone" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2io-ym-CF1">
+                                                            <rect key="frame" x="0.0" y="0.0" width="180" height="46.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="car" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JOH-Cu-i2W">
+                                                            <rect key="frame" x="185" y="0.0" width="180" height="46.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="X7k-9t-Dw2" firstAttribute="leading" secondItem="KJ7-Pf-FM3" secondAttribute="leading" id="K1p-12-bCY"/>
+                                                <constraint firstItem="uAZ-RX-JbE" firstAttribute="top" secondItem="X7k-9t-Dw2" secondAttribute="bottom" constant="5" id="Mcr-cd-3ta"/>
+                                                <constraint firstAttribute="bottom" secondItem="uAZ-RX-JbE" secondAttribute="bottom" constant="5" id="a6l-kd-Wm3"/>
+                                                <constraint firstAttribute="trailing" secondItem="X7k-9t-Dw2" secondAttribute="trailing" constant="20" symbolic="YES" id="cRi-0i-shf"/>
+                                                <constraint firstItem="X7k-9t-Dw2" firstAttribute="top" secondItem="KJ7-Pf-FM3" secondAttribute="top" constant="7" id="psQ-5G-YiY"/>
+                                                <constraint firstAttribute="trailing" secondItem="uAZ-RX-JbE" secondAttribute="trailing" constant="5" id="sEb-63-ePd"/>
+                                                <constraint firstItem="uAZ-RX-JbE" firstAttribute="leading" secondItem="KJ7-Pf-FM3" secondAttribute="leading" constant="5" id="yJ5-zC-41n"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="carLB" destination="JOH-Cu-i2W" id="FMO-yV-D4P"/>
+                                            <outlet property="dateLB" destination="G6P-Oo-1aw" id="vYA-5e-QeE"/>
+                                            <outlet property="destination" destination="v2i-IH-1nT" id="gMn-lm-Rsb"/>
+                                            <outlet property="phoneLB" destination="2io-ym-CF1" id="XkN-Og-dbV"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dpu-7r-GaY" secondAttribute="bottom" id="0VL-Cc-Ic6"/>
+                            <constraint firstItem="dpu-7r-GaY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9Pc-tJ-h25"/>
+                            <constraint firstItem="dpu-7r-GaY" firstAttribute="top" secondItem="xzc-gS-k5y" secondAttribute="bottom" constant="7" id="Bgs-Uy-QXs"/>
+                            <constraint firstItem="xzc-gS-k5y" firstAttribute="top" secondItem="xI8-a2-CrG" secondAttribute="bottom" constant="10" id="HKa-cv-s4M"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dpu-7r-GaY" secondAttribute="trailing" id="LaW-fe-YlY"/>
+                            <constraint firstItem="xI8-a2-CrG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TW7-SS-TnL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xI8-a2-CrG" secondAttribute="trailing" id="b6r-z3-h6q"/>
+                            <constraint firstItem="xzc-gS-k5y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sPf-m6-diD"/>
+                            <constraint firstItem="xI8-a2-CrG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="7" id="wFs-GO-xFZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="E2S-30-YCX"/>
+                    <connections>
+                        <outlet property="ToTXT" destination="7c6-YC-Ba2" id="e1E-UE-qM1"/>
+                        <outlet property="fromTXT" destination="A7a-em-fAj" id="Jbd-0s-gjF"/>
+                        <outlet property="mytableview" destination="dpu-7r-GaY" id="NJE-yg-NfQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="656.79999999999995" y="139.880059970015"/>
+        </scene>
+        <!--New TripVC-->
+        <scene sceneID="HW7-EL-Ge3">
+            <objects>
+                <viewController storyboardIdentifier="newtrip" id="prf-c1-5B6" customClass="NewTripVC" customModule="RealTimeCarSharing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oI9-Nd-CrS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="uoL-lO-mZl">
+                                <rect key="frame" x="16" y="35" width="336" height="35"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="from" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5W3-yf-43R">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="1Ae-iQ-MB1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="from here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MBC-ax-G2J">
+                                        <rect key="frame" x="45" y="0.0" width="130" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="130" id="H1B-b7-sr5"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xqh-Tx-tig">
+                                        <rect key="frame" x="180" y="0.0" width="40" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="WBY-2h-eIG"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="o8I-Ie-6Gi"/>
+                                            <constraint firstAttribute="width" constant="40" id="vO9-6I-1tJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="to Destination" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iaa-jb-Ih5">
+                                        <rect key="frame" x="225" y="0.0" width="111" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="130" id="5G7-nI-YyI"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="MBC-ax-G2J" firstAttribute="top" secondItem="uoL-lO-mZl" secondAttribute="top" id="5dL-cP-Y1g"/>
+                                    <constraint firstAttribute="trailing" secondItem="iaa-jb-Ih5" secondAttribute="trailing" id="9Nc-5S-UbX"/>
+                                    <constraint firstAttribute="bottom" secondItem="iaa-jb-Ih5" secondAttribute="bottom" id="Ekl-fq-VKn"/>
+                                    <constraint firstItem="Xqh-Tx-tig" firstAttribute="top" secondItem="uoL-lO-mZl" secondAttribute="top" id="Imm-i2-gdu"/>
+                                    <constraint firstItem="Xqh-Tx-tig" firstAttribute="leading" secondItem="MBC-ax-G2J" secondAttribute="trailing" constant="5" id="VfE-I4-oAP"/>
+                                    <constraint firstItem="MBC-ax-G2J" firstAttribute="leading" secondItem="5W3-yf-43R" secondAttribute="trailing" constant="5" id="YNi-cQ-3cl"/>
+                                    <constraint firstItem="5W3-yf-43R" firstAttribute="top" secondItem="uoL-lO-mZl" secondAttribute="top" id="aOy-14-zkd"/>
+                                    <constraint firstAttribute="bottom" secondItem="5W3-yf-43R" secondAttribute="bottom" id="coZ-01-Smn"/>
+                                    <constraint firstAttribute="bottom" secondItem="MBC-ax-G2J" secondAttribute="bottom" id="dDX-YU-fde"/>
+                                    <constraint firstAttribute="trailing" secondItem="iaa-jb-Ih5" secondAttribute="trailing" id="kmT-Y4-WHW"/>
+                                    <constraint firstItem="iaa-jb-Ih5" firstAttribute="top" secondItem="uoL-lO-mZl" secondAttribute="top" id="nRG-27-DCt"/>
+                                    <constraint firstItem="5W3-yf-43R" firstAttribute="leading" secondItem="uoL-lO-mZl" secondAttribute="leading" id="oC8-al-SE3"/>
+                                    <constraint firstAttribute="height" constant="35" id="pIq-9B-HbC"/>
+                                    <constraint firstAttribute="bottom" secondItem="Xqh-Tx-tig" secondAttribute="bottom" id="sKb-Al-ZMm"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="1NT-3O-Uai">
+                                <rect key="frame" x="20" y="80" width="100" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="careType" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glJ-Up-zIn">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="45.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJ2-Hg-wwL">
+                                        <rect key="frame" x="0.0" y="52.5" width="100" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="no.Passen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ERZ-ef-ydO">
+                                        <rect key="frame" x="0.0" y="104.5" width="100" height="45.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="qee-oi-zJ4"/>
+                                    <constraint firstAttribute="height" constant="150" id="tQw-jH-PC9"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="7Bw-LI-ouO">
+                                <rect key="frame" x="130" y="80" width="215" height="150"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MyX-AJ-bIu" customClass="roundTxtFied" customModule="RealTimeCarSharing" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="215" height="45.5"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.38478904749999998" green="0.68919866060000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yTB-HI-tqf" customClass="roundTxtFied" customModule="RealTimeCarSharing" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="52.5" width="215" height="45"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.38478904749999998" green="0.68919866060000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="no.of passanger" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vqA-kv-S37" customClass="roundTxtFied" customModule="RealTimeCarSharing" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="104.5" width="215" height="45.5"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numbersAndPunctuation"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.38478904749999998" green="0.68919866060000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="642-wR-fn3"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MIa-sE-1sa" customClass="circleButton" customModule="RealTimeCarSharing" customModuleProvider="target">
+                                <rect key="frame" x="111" y="458" width="130" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ixd-Uu-gif"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="McY-04-KCE"/>
+                                    <constraint firstAttribute="width" constant="130" id="RaU-V9-8GM"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="woa-ye-EW3"/>
+                                </constraints>
+                                <state key="normal" title="send">
+                                    <color key="titleColor" red="0.38478904749999998" green="0.68919866060000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.38478904749999998" green="0.68919866060000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="sendBTN:" destination="prf-c1-5B6" eventType="touchUpInside" id="T7s-hB-Rjl"/>
+                                </connections>
+                            </button>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="0bS-pz-cLo">
+                                <rect key="frame" x="7" y="239" width="338" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="603880554.76641905">
+                                    <!--2020-02-20 08:35:54 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YcS-yV-WBb" firstAttribute="trailing" secondItem="7Bw-LI-ouO" secondAttribute="trailing" constant="7" id="ERS-Kc-tC2"/>
+                            <constraint firstItem="uoL-lO-mZl" firstAttribute="top" secondItem="YcS-yV-WBb" secondAttribute="top" constant="15" id="GQd-vP-XLK"/>
+                            <constraint firstItem="uoL-lO-mZl" firstAttribute="leading" secondItem="oI9-Nd-CrS" secondAttribute="leadingMargin" id="IgG-NH-cVv"/>
+                            <constraint firstItem="MIa-sE-1sa" firstAttribute="centerX" secondItem="oI9-Nd-CrS" secondAttribute="centerX" id="Kz7-9C-q5g"/>
+                            <constraint firstItem="1NT-3O-Uai" firstAttribute="leading" secondItem="YcS-yV-WBb" secondAttribute="leading" constant="20" id="Sko-YB-RFO"/>
+                            <constraint firstItem="YcS-yV-WBb" firstAttribute="trailing" secondItem="uoL-lO-mZl" secondAttribute="trailing" id="U37-0L-IpQ"/>
+                            <constraint firstItem="0bS-pz-cLo" firstAttribute="top" secondItem="1NT-3O-Uai" secondAttribute="bottom" constant="9" id="UvF-nt-pzC"/>
+                            <constraint firstItem="1NT-3O-Uai" firstAttribute="top" secondItem="uoL-lO-mZl" secondAttribute="bottom" constant="10" id="WPS-fy-Y4A"/>
+                            <constraint firstItem="7Bw-LI-ouO" firstAttribute="top" secondItem="uoL-lO-mZl" secondAttribute="bottom" constant="10" id="XSw-el-Jff"/>
+                            <constraint firstItem="0bS-pz-cLo" firstAttribute="leading" secondItem="oI9-Nd-CrS" secondAttribute="leading" constant="7" id="Xnf-9F-luS"/>
+                            <constraint firstItem="7Bw-LI-ouO" firstAttribute="leading" secondItem="1NT-3O-Uai" secondAttribute="trailing" constant="10" id="fhl-BW-gUh"/>
+                            <constraint firstItem="MIa-sE-1sa" firstAttribute="top" secondItem="0bS-pz-cLo" secondAttribute="bottom" constant="3" id="v0c-b3-7W5"/>
+                            <constraint firstItem="YcS-yV-WBb" firstAttribute="trailing" secondItem="0bS-pz-cLo" secondAttribute="trailing" constant="7" id="yxv-GS-0EY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YcS-yV-WBb"/>
+                    </view>
+                    <connections>
+                        <outlet property="carTypeTXT" destination="MyX-AJ-bIu" id="uIG-af-yuH"/>
+                        <outlet property="datePicker" destination="0bS-pz-cLo" id="vWX-N7-ZfN"/>
+                        <outlet property="destFrom" destination="MBC-ax-G2J" id="cop-xT-Q49"/>
+                        <outlet property="destTo" destination="iaa-jb-Ih5" id="Q2b-WG-lUv"/>
+                        <outlet property="noPassTXT" destination="vqA-kv-S37" id="Pct-zf-Pmf"/>
+                        <outlet property="phontTXT" destination="yTB-HI-tqf" id="PBO-mT-knj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="USO-On-Oam" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1452" y="134.48275862068968"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="P27-Q4-QBw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8PQ-XN-zxL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xMB-lD-0X3">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.38478904749999998" green="0.68919866060000001" blue="1" alpha="0.72551904965753422" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="h5Q-vH-C6v"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GFW-hU-RaE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1" y="140"/>
+        </scene>
+    </scenes>
+</document>

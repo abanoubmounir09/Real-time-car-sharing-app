@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C544CCF4E89FA30651BF5901 /* Pods_RealTimeCarSharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FBCD7526B0CC86EA5C0508 /* Pods_RealTimeCarSharing.framework */; };
+		F24687362401216C00A72240 /* extension-string.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24687352401216C00A72240 /* extension-string.swift */; };
+		F264D72D23FD462F00C3A636 /* circleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F264D72C23FD462F00C3A636 /* circleButton.swift */; };
+		F264D73223FD542500C3A636 /* NewTripVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F264D73123FD542500C3A636 /* NewTripVC.swift */; };
+		F264D73423FD5D3500C3A636 /* roundTxtFied.swift in Sources */ = {isa = PBXBuildFile; fileRef = F264D73323FD5D3500C3A636 /* roundTxtFied.swift */; };
+		F2A4C6BC23FE845E00A4C617 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2A4C6BB23FE845E00A4C617 /* GoogleService-Info.plist */; };
+		F2A4C6BF23FEB70000A4C617 /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A4C6BE23FEB70000A4C617 /* TripModel.swift */; };
+		F2ACDB9023FFFA5C00BA19A3 /* CustomTripeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ACDB8F23FFFA5C00BA19A3 /* CustomTripeCell.swift */; };
+		F2BE6A7A23FD3F5000ABF095 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BE6A7923FD3F5000ABF095 /* AppDelegate.swift */; };
+		F2BE6A7C23FD3F5000ABF095 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BE6A7B23FD3F5000ABF095 /* ViewController.swift */; };
+		F2BE6A7F23FD3F5100ABF095 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2BE6A7D23FD3F5100ABF095 /* Main.storyboard */; };
+		F2BE6A8123FD3F5100ABF095 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2BE6A8023FD3F5100ABF095 /* Assets.xcassets */; };
+		F2BE6A8423FD3F5100ABF095 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2BE6A8223FD3F5100ABF095 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		10FBCD7526B0CC86EA5C0508 /* Pods_RealTimeCarSharing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealTimeCarSharing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55BD3E261FBDE1A0C1EFD68F /* Pods-RealTimeCarSharing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealTimeCarSharing.debug.xcconfig"; path = "Target Support Files/Pods-RealTimeCarSharing/Pods-RealTimeCarSharing.debug.xcconfig"; sourceTree = "<group>"; };
+		DF95EDB6CADAF5CDD2EA94AB /* Pods-RealTimeCarSharing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealTimeCarSharing.release.xcconfig"; path = "Target Support Files/Pods-RealTimeCarSharing/Pods-RealTimeCarSharing.release.xcconfig"; sourceTree = "<group>"; };
+		F24687352401216C00A72240 /* extension-string.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension-string.swift"; sourceTree = "<group>"; };
+		F264D72C23FD462F00C3A636 /* circleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = circleButton.swift; sourceTree = "<group>"; };
+		F264D73123FD542500C3A636 /* NewTripVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTripVC.swift; sourceTree = "<group>"; };
+		F264D73323FD5D3500C3A636 /* roundTxtFied.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roundTxtFied.swift; sourceTree = "<group>"; };
+		F2A4C6BB23FE845E00A4C617 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F2A4C6BE23FEB70000A4C617 /* TripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
+		F2ACDB8F23FFFA5C00BA19A3 /* CustomTripeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTripeCell.swift; sourceTree = "<group>"; };
+		F2BE6A7623FD3F5000ABF095 /* RealTimeCarSharing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealTimeCarSharing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2BE6A7923FD3F5000ABF095 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F2BE6A7B23FD3F5000ABF095 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F2BE6A7E23FD3F5100ABF095 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F2BE6A8023FD3F5100ABF095 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2BE6A8323FD3F5100ABF095 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F2BE6A8523FD3F5100ABF095 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2BE6A7323FD3F5000ABF095 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C544CCF4E89FA30651BF5901 /* Pods_RealTimeCarSharing.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4DBE0F3A78927DA58B005561 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10FBCD7526B0CC86EA5C0508 /* Pods_RealTimeCarSharing.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5ABC53B0F74A5AC9DDC0D3BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55BD3E261FBDE1A0C1EFD68F /* Pods-RealTimeCarSharing.debug.xcconfig */,
+				DF95EDB6CADAF5CDD2EA94AB /* Pods-RealTimeCarSharing.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F264D72B23FD460500C3A636 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				F264D72C23FD462F00C3A636 /* circleButton.swift */,
+				F264D73323FD5D3500C3A636 /* roundTxtFied.swift */,
+				F24687352401216C00A72240 /* extension-string.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		F264D72E23FD53A100C3A636 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				F2BE6A7B23FD3F5000ABF095 /* ViewController.swift */,
+				F264D73123FD542500C3A636 /* NewTripVC.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		F2A4C6BD23FEB6D300A4C617 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F2A4C6BE23FEB70000A4C617 /* TripModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		F2ACDB8E23FFFA1D00BA19A3 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F2ACDB8F23FFFA5C00BA19A3 /* CustomTripeCell.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		F2BE6A6D23FD3F4F00ABF095 = {
+			isa = PBXGroup;
+			children = (
+				F2A4C6BB23FE845E00A4C617 /* GoogleService-Info.plist */,
+				F2BE6A7823FD3F5000ABF095 /* RealTimeCarSharing */,
+				F2BE6A7723FD3F5000ABF095 /* Products */,
+				5ABC53B0F74A5AC9DDC0D3BD /* Pods */,
+				4DBE0F3A78927DA58B005561 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F2BE6A7723FD3F5000ABF095 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2BE6A7623FD3F5000ABF095 /* RealTimeCarSharing.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2BE6A7823FD3F5000ABF095 /* RealTimeCarSharing */ = {
+			isa = PBXGroup;
+			children = (
+				F2ACDB8E23FFFA1D00BA19A3 /* view */,
+				F2A4C6BD23FEB6D300A4C617 /* model */,
+				F264D72B23FD460500C3A636 /* extension */,
+				F264D72E23FD53A100C3A636 /* controller */,
+				F2BE6A7D23FD3F5100ABF095 /* Main.storyboard */,
+				F2BE6A7923FD3F5000ABF095 /* AppDelegate.swift */,
+				F2BE6A8023FD3F5100ABF095 /* Assets.xcassets */,
+				F2BE6A8223FD3F5100ABF095 /* LaunchScreen.storyboard */,
+				F2BE6A8523FD3F5100ABF095 /* Info.plist */,
+			);
+			path = RealTimeCarSharing;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2BE6A7523FD3F5000ABF095 /* RealTimeCarSharing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2BE6A8823FD3F5100ABF095 /* Build configuration list for PBXNativeTarget "RealTimeCarSharing" */;
+			buildPhases = (
+				AC72146A3A13D97CD66304C9 /* [CP] Check Pods Manifest.lock */,
+				F2BE6A7223FD3F5000ABF095 /* Sources */,
+				F2BE6A7323FD3F5000ABF095 /* Frameworks */,
+				F2BE6A7423FD3F5000ABF095 /* Resources */,
+				CC6B85B1F6E1B8907FE351E0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RealTimeCarSharing;
+			productName = RealTimeCarSharing;
+			productReference = F2BE6A7623FD3F5000ABF095 /* RealTimeCarSharing.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2BE6A6E23FD3F4F00ABF095 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = pop;
+				TargetAttributes = {
+					F2BE6A7523FD3F5000ABF095 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F2BE6A7123FD3F4F00ABF095 /* Build configuration list for PBXProject "RealTimeCarSharing" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2BE6A6D23FD3F4F00ABF095;
+			productRefGroup = F2BE6A7723FD3F5000ABF095 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2BE6A7523FD3F5000ABF095 /* RealTimeCarSharing */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2BE6A7423FD3F5000ABF095 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2BE6A8423FD3F5100ABF095 /* LaunchScreen.storyboard in Resources */,
+				F2A4C6BC23FE845E00A4C617 /* GoogleService-Info.plist in Resources */,
+				F2BE6A8123FD3F5100ABF095 /* Assets.xcassets in Resources */,
+				F2BE6A7F23FD3F5100ABF095 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AC72146A3A13D97CD66304C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RealTimeCarSharing-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC6B85B1F6E1B8907FE351E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RealTimeCarSharing/Pods-RealTimeCarSharing-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RealTimeCarSharing/Pods-RealTimeCarSharing-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2BE6A7223FD3F5000ABF095 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F264D73223FD542500C3A636 /* NewTripVC.swift in Sources */,
+				F264D72D23FD462F00C3A636 /* circleButton.swift in Sources */,
+				F24687362401216C00A72240 /* extension-string.swift in Sources */,
+				F2A4C6BF23FEB70000A4C617 /* TripModel.swift in Sources */,
+				F2BE6A7C23FD3F5000ABF095 /* ViewController.swift in Sources */,
+				F2ACDB9023FFFA5C00BA19A3 /* CustomTripeCell.swift in Sources */,
+				F2BE6A7A23FD3F5000ABF095 /* AppDelegate.swift in Sources */,
+				F264D73423FD5D3500C3A636 /* roundTxtFied.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F2BE6A7D23FD3F5100ABF095 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2BE6A7E23FD3F5100ABF095 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F2BE6A8223FD3F5100ABF095 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2BE6A8323FD3F5100ABF095 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F2BE6A8623FD3F5100ABF095 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F2BE6A8723FD3F5100ABF095 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F2BE6A8923FD3F5100ABF095 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55BD3E261FBDE1A0C1EFD68F /* Pods-RealTimeCarSharing.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RealTimeCarSharing/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pop.RealTimeCarSharing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F2BE6A8A23FD3F5100ABF095 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF95EDB6CADAF5CDD2EA94AB /* Pods-RealTimeCarSharing.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RealTimeCarSharing/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pop.RealTimeCarSharing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2BE6A7123FD3F4F00ABF095 /* Build configuration list for PBXProject "RealTimeCarSharing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2BE6A8623FD3F5100ABF095 /* Debug */,
+				F2BE6A8723FD3F5100ABF095 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2BE6A8823FD3F5100ABF095 /* Build configuration list for PBXNativeTarget "RealTimeCarSharing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2BE6A8923FD3F5100ABF095 /* Debug */,
+				F2BE6A8A23FD3F5100ABF095 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2BE6A6E23FD3F4F00ABF095 /* Project object */;
+}
